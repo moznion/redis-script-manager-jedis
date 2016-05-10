@@ -18,12 +18,28 @@ public class JedisScriptManager extends ScriptManager<String, String> {
     boolean isNoScript;
 
     public JedisScriptManager(final ScriptingCommands commands, final String script) {
-        this(commands, script, true);
+        this(commands, script, null, true);
     }
 
-    public JedisScriptManager(final ScriptingCommands commands, final String script, final boolean useEvalSHA) {
+    public JedisScriptManager(final ScriptingCommands commands,
+                              final String script,
+                              final String sha1) {
+        this(commands, script, sha1, true);
+    }
+
+    public JedisScriptManager(final ScriptingCommands commands,
+                              final String script,
+                              final boolean useEvalSHA) {
+        this(commands, script, null, useEvalSHA);
+    }
+
+    public JedisScriptManager(final ScriptingCommands commands,
+                              final String script,
+                              final String sha1,
+                              final boolean useEvalSHA) {
         this.commands = commands;
         this.script = script;
+        this.sha1 = sha1;
         this.useEvalSHA = useEvalSHA;
         isNoScript = true;
     }
