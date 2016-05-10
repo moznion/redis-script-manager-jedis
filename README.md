@@ -1,4 +1,4 @@
-Redis Script Manager for Java with [Jedis](https://github.com/xetorthio/jedis) [![Build Status](https://travis-ci.org/moznion/redis-script-manager-jedis.svg?branch=master)](https://travis-ci.org/moznion/redis-script-manager-jedis)
+Redis Script Manager for Java with [Jedis](https://github.com/xetorthio/jedis) [![Build Status](https://travis-ci.org/moznion/redis-script-manager-jedis.svg?branch=master)](https://travis-ci.org/moznion/redis-script-manager-jedis) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/net.moznion/redis-script-manager-jedis/badge.svg)](https://maven-badges.herokuapp.com/maven-central/net.moznion/redis-script-manager-jedis)
 ==
 
 Simple manager for scripting of Redis with [Jedis](https://github.com/xetorthio/jedis).  
