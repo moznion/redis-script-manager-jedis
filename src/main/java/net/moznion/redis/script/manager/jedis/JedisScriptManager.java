@@ -37,9 +37,9 @@ public class JedisScriptManager extends ScriptManager<String, String> {
                               final String script,
                               final String sha1,
                               final boolean useEvalSHA) {
+        super(sha1);
         this.commands = commands;
         this.script = script;
-        this.sha1 = sha1;
         this.useEvalSHA = useEvalSHA;
         isNoScript = true;
     }
